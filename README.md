@@ -1,7 +1,7 @@
 # NodeJs Example
 stack: NodeJS, Express, MongoDB
 
-In this simple example I made a few CRUDs for different types of activities and services such as Cources, Masterclasses and others.
+For this simple example I took a few CRUDs for different types of activities and services such as Cources, Masterclasses and others from the project I worked on.
 Also we can create a customer, and bind him to a particular activity.  
 
 ----

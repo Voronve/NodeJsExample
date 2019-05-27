@@ -1,0 +1,1537 @@
+{
+	"info": {
+		"_postman_id": "78483022-262b-4639-aefb-34db3270deb5",
+		"name": "ExampleRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MasterclassAdult",
+			"item": [
+				{
+					"name": "Find All Masterclasses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterAdult",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterAdult"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a masterclass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "icon",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "name",
+									"value": "Great!",
+									"type": "text"
+								},
+								{
+									"key": "imgDesc",
+									"value": "Gread image",
+									"type": "text"
+								},
+								{
+									"key": "info",
+									"value": "19.99",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterAdult/single",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterAdult",
+								"single"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a single masterclass",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterAdult/single?id=5ccd4c39e56d752857e832c7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterAdult",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5ccd4c39e56d752857e832c7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit masterclass",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "icon",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "name",
+									"value": "Brand new",
+									"type": "text"
+								},
+								{
+									"key": "imgDesc",
+									"value": "Very beautiful icon",
+									"type": "text"
+								},
+								{
+									"key": "info",
+									"value": "Информация",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterAdult/single?id=5cda753f86a8db269836e824",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterAdult",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cda753f86a8db269836e824"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " Delete masterclass",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterAdult/single?id=5cce03edf5897716a93187dd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterAdult",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cce03edf5897716a93187dd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete image",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterAdult/image?masterId=5cce0718ac4cbe20277f3b76&pictureId=5cce0718ac4cbe20277f3b75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterAdult",
+								"image"
+							],
+							"query": [
+								{
+									"key": "masterId",
+									"value": "5cce0718ac4cbe20277f3b76"
+								},
+								{
+									"key": "pictureId",
+									"value": "5cce0718ac4cbe20277f3b75"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MasterclassKid",
+			"item": [
+				{
+					"name": "Find all masterclasses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterKid/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterKid",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a single masterclass",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterKid/single?id=5ccafc44840b4451959ba57c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterKid",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5ccafc44840b4451959ba57c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a masterclass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "drowing",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is a description",
+									"type": "text"
+								},
+								{
+									"key": "icon",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "price",
+									"value": "300$",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "1 година",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterKid/single",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterKid",
+								"single"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit masterclass",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Kostya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "voronve1987@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "0679669723",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "icon",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "description",
+									"value": "Drowing2",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100$",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "2 години",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterKid/single?id=5ce3b4c4ef979c1ea85aab12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterKid",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5ce3b4c4ef979c1ea85aab12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete masterclass",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/masterKid/single?id=5ccf3bbc70a2b1456332ffa6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"masterKid",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5ccf3bbc70a2b1456332ffa6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CoursesMain",
+			"item": [
+				{
+					"name": "Get single course",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/coursesMain/single?id=5cd0001584553029a8341086",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"coursesMain",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cd0001584553029a8341086"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all courses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/coursesMain?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"coursesMain"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cce0718ac4cbe20277f3b76",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Sample course",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "It's an exelent course!",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20.99$",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "Seterday",
+									"type": "text"
+								},
+								{
+									"key": "icon",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/coursesMain/single",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"coursesMain",
+								"single"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "  Edit course ",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "5cd0001584553029a8341086",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "Sunday",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "19.99$",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Best course",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "It's an exelent course!\n",
+									"type": "text"
+								},
+								{
+									"key": "icon",
+									"value": "/images/enrollment/icon-1557135381246-picture.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/coursesMain/single",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"coursesMain",
+								"single"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete course",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/coursesMain/single?id=5cdc6f957294352191851758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"coursesMain",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cdc6f957294352191851758"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Add client to course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Kostya3",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "example1987@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0679669723",
+									"type": "text"
+								},
+								{
+									"key": "courseType",
+									"value": "Course",
+									"type": "text"
+								},
+								{
+									"key": "courseId",
+									"value": "5cd86b1d9bc97d2a88c4db49",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "Seterday",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "12.99$",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client"
+							],
+							"query": [
+								{
+									"key": "courseType",
+									"value": "Course",
+									"disabled": true
+								},
+								{
+									"key": "service",
+									"value": "Будь яке ненульове значення",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/5cd2c8e1c7b7ae3e56b6d1a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								"5cd2c8e1c7b7ae3e56b6d1a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " Delete client",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/5cd8603145f17625072efd4b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								"5cd8603145f17625072efd4b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit client",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/5cd2ea13c0542c55b278246f?name=My name&phone=123456789&email=example@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								"5cd2ea13c0542c55b278246f"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "My name"
+								},
+								{
+									"key": "phone",
+									"value": "123456789"
+								},
+								{
+									"key": "email",
+									"value": "example@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add client to masterclass for Kid",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "222",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "example@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0679660000",
+									"type": "text"
+								},
+								{
+									"key": "courseType",
+									"value": "MasterKid",
+									"type": "text"
+								},
+								{
+									"key": "courseId",
+									"value": "5ce2b5db0153da407e9da7e6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add client to masterclass for adult",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ExampleName",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "example@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "courseType",
+									"value": "MasterAdult",
+									"type": "text"
+								},
+								{
+									"key": "courseId",
+									"value": "5cda910963ecc23ab7206bdc",
+									"type": "text"
+								},
+								{
+									"key": "picId",
+									"value": "5cda910963ecc23ab7206bdb",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0679669723",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add client to picture order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Kostya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "example@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "000000000",
+									"type": "text"
+								},
+								{
+									"key": "serviceName",
+									"value": "Картини на замовлення",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "SampleText",
+									"type": "text"
+								},
+								{
+									"key": "serviceId",
+									"value": "5cdbd74fc957a027d610a208",
+									"type": "text"
+								},
+								{
+									"key": "adress",
+									"value": "м.Вінниця",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add client to sertificate order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Kostya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "example@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "000000000",
+									"type": "text"
+								},
+								{
+									"key": "serviceName",
+									"value": "Подарункові сертифікати",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "serviceId",
+									"value": "5cdbd74fc957a027d610a208",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "SampleText",
+									"type": "text"
+								},
+								{
+									"key": "adress",
+									"value": "м.Вінниця",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service",
+			"item": [
+				{
+					"name": "Get services list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/service/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"service",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Подарункові сертифікати",
+									"type": "text"
+								},
+								{
+									"key": "icon",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "description",
+									"value": "Рандомний текст",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "300,  500,       1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/service/single",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"service",
+								"single"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/service/single?id=5cdad599b36b7c66c823900f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"service",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cdad599b36b7c66c823900f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit service",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Інше ім'я",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Інший рандомний текст3",
+									"description": "i",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "price",
+									"value": "200,400,600",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/service/single?id=5c8b6af6fb6fc072013582dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"service",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5c8b6af6fb6fc072013582dc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete service",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/admin/service/single?id=5cdad570b36b7c66c823900e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"service",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5cdad570b36b7c66c823900e"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Actions",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "login",
+									"value": "Kostya",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1111",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/logreg/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"logreg",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ServiceOrders",
+			"item": [
+				{
+					"name": "Get order list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

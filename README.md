@@ -2,7 +2,7 @@
 stack: NodeJS, Express, MongoDB
 
 In this simple example I made a few CRUDs for different types of activities and services such as Cources, Masterclasses and others.
-Also we can create a customer, and bind him to to a particular activity.  
+Also we can create a customer, and bind him to a particular activity.  
 
 ----
 ## installation:

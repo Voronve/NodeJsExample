@@ -21,7 +21,7 @@
     "express-session": "^1.15.6",
     "http-errors": "^1.7.1",
     "jade": "^1.11.0",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "list-contents": "^4.0.2",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
